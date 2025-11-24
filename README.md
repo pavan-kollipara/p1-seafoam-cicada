@@ -86,3 +86,4 @@ The ingest node emits a HumanMessage, classify_issue applies keyword rules from 
 Claude also generated the mock datasets and sanity-checked FastAPI error handling for missing or unknown orders.
 
 For tests, it proposed pytest coverage aligned with the graph contracts: parametrized happy-path tickets verifying issue_type, order_id, reply presence, and message history, plus a negative case for tickets without detectable order IDs. These were refined and incorporated into `tests/test_triage.py` to guard expected agent behaviors.
+
